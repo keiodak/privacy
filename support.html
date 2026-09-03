@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Ferric</title>
+<style>
+  :root {
+    --bg: #f2f2f0;
+    --card: #dedede;
+    --ink: #1e1e1c;
+    --muted: #5a5a58;
+    --rule: #c4c4c2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, "Helvetica Neue", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 1.5rem; font-weight: 400; letter-spacing: .04em; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); font-size: .875rem; margin: 0 0 3rem; }
+  h2 {
+    font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); margin: 3rem 0 .75rem; padding-bottom: .5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .5rem; }
+  a { color: var(--ink); }
+  .lead {
+    background: var(--card); border-radius: 10px; padding: 1.25rem 1.5rem; margin: 0 0 1rem;
+  }
+  .lead p:last-child { margin-bottom: 0; }
+  .ja { margin-top: 5rem; }
+  .back { display: inline-block; margin-bottom: 2.5rem; font-size: .8125rem;
+          color: var(--muted); text-decoration: none; }
+  .apps { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .apps li { margin: 0 0 .75rem; }
+  .apps a { display: block; background: var(--card); border-radius: 10px;
+            padding: 1rem 1.25rem; text-decoration: none; }
+  .apps strong { display: block; font-weight: 500; }
+  .apps span { color: var(--muted); font-size: .875rem; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: .8125rem; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1a1a19; --card: #262625; --ink: #e8e8e6; --muted: #9a9a97; --rule: #3a3a38; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <a class="back" href="./">&larr; All apps / アプリ一覧</a>
+
+  <h1>Ferric — Support</h1>
+  <p class="sub">Tape loop recorder &nbsp;&middot;&nbsp; k.odk</p>
+
+  <div class="lead">
+    <p>Something wrong, or something missing? Write to
+    <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a>. Please include your device
+    model, your iOS version, and what you were doing when it happened — it makes a fix much
+    more likely.</p>
+  </div>
+
+  <h2>Nothing records</h2>
+  <p>Open Settings &gt; Privacy &amp; Security &gt; Microphone and make sure Ferric is allowed.
+  If the app never asked for permission, delete it and install it again.</p>
+
+  <h2>My loops disappeared</h2>
+  <p>Loops and stock slots are saved automatically and come back when you reopen the app, but
+  they live only on your device. Deleting the app deletes them with it.</p>
+
+  <h2>The sound stopped</h2>
+  <p>Playback stops on purpose when you unplug headphones, so that nothing suddenly blares out
+  of the speaker. Press play again. If a phone call or another app interrupted the audio and it
+  does not come back, close Ferric and open it again.</p>
+
+  <h2>How long can a loop be?</h2>
+  <p>Each deck holds twenty seconds. The field recorder holds five minutes and bypasses the
+  tape entirely.</p>
+
+  <h2>What does LINK do?</h2>
+  <p>It makes both decks turn over together, using the shorter of the two loops as the length.
+  Pitch is untouched — the longer tape simply returns to the start earlier.</p>
+
+  <h2>Can I export what I made?</h2>
+  <p>Not yet. Ferric can load audio files but cannot write them out. If that is what you need,
+  say so in an email — it helps decide what comes next.</p>
+
+  <h2>Privacy</h2>
+  <p>Ferric collects nothing and makes no network connections. The full policy is
+  <a href="ferric.html">here</a>.</p>
+
+  <!-- ───────────────────────────────────────────── -->
+
+  <div class="ja">
+    <h1>Ferric — サポート</h1>
+    <p class="sub">テープループ・レコーダー &nbsp;&middot;&nbsp; k.odk</p>
+
+    <div class="lead">
+      <p>不具合のご報告、ご要望は
+      <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a> までお送りください。
+      端末の機種名、iOSのバージョン、どの操作で起きたかを書き添えていただけると、
+      直せる可能性がぐっと上がります。</p>
+    </div>
+
+    <h2>録音できません</h2>
+    <p>設定 &gt; プライバシーとセキュリティ &gt; マイク で、Ferric が許可されているか確認して
+    ください。許可を訊かれた記憶がない場合は、一度アプリを削除して入れ直してください。</p>
+
+    <h2>ループが消えました</h2>
+    <p>ループとストックは自動的に保存され、次に開いたときに戻ります。ただし保存先は端末の中だけ
+    なので、アプリを削除すると一緒に消えます。</p>
+
+    <h2>音が出なくなりました</h2>
+    <p>イヤホンを抜くと、スピーカーから突然鳴らないように再生を止める仕様です。もう一度再生を
+    押してください。電話や他のアプリに音を奪われたまま戻らない場合は、Ferric を一度閉じて
+    開き直してください。</p>
+
+    <h2>ループの長さは</h2>
+    <p>デッキは1台につき20秒です。フィールドレコーダーは5分で、こちらはテープの効果を通りません。</p>
+
+    <h2>LINK は何をしますか</h2>
+    <p>2台のデッキを、短いほうのループの長さで一緒に折り返させます。ピッチは変わりません。
+    長いほうのテープが早く頭に戻るだけです。</p>
+
+    <h2>作ったものを書き出せますか</h2>
+    <p>いまはできません。読み込みはできますが、書き出しには対応していません。必要でしたら
+    メールで教えてください。次に何を作るかの判断材料になります。</p>
+
+    <h2>プライバシー</h2>
+    <p>Ferric は何も収集せず、通信も行いません。方針の全文は<a href="ferric.html">こちら</a>です。</p>
+  </div>
+
+  <footer>
+    Last updated 3 September 2026 &nbsp;&middot;&nbsp; 最終更新 2026年9月3日
+  </footer>
+
+</main>
+</body>
+</html>
