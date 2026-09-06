@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — VGA Cam</title>
+<style>
+  :root {
+    --bg: #f2f2f0;
+    --card: #dedede;
+    --ink: #1e1e1c;
+    --muted: #5a5a58;
+    --rule: #c4c4c2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, "Helvetica Neue", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 1.5rem; font-weight: 400; letter-spacing: .04em; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); font-size: .875rem; margin: 0 0 3rem; }
+  h2 {
+    font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); margin: 3rem 0 .75rem; padding-bottom: .5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .5rem; }
+  a { color: var(--ink); }
+  .lead {
+    background: var(--card); border-radius: 10px; padding: 1.25rem 1.5rem; margin: 0 0 1rem;
+  }
+  .lead p:last-child { margin-bottom: 0; }
+  .ja { margin-top: 5rem; }
+  .back { display: inline-block; margin-bottom: 2.5rem; font-size: .8125rem;
+          color: var(--muted); text-decoration: none; }
+  .apps { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .apps li { margin: 0 0 .75rem; }
+  .apps a { display: block; background: var(--card); border-radius: 10px;
+            padding: 1rem 1.25rem; text-decoration: none; }
+  .apps strong { display: block; font-weight: 500; }
+  .apps span { color: var(--muted); font-size: .875rem; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: .8125rem; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1a1a19; --card: #262625; --ink: #e8e8e6; --muted: #9a9a97; --rule: #3a3a38; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <a class="back" href="./">&larr; All apps / アプリ一覧</a>
+
+  <h1>VGA Cam — Support</h1>
+  <p class="sub">Low-res digicam &nbsp;&middot;&nbsp; k.odk</p>
+
+  <div class="lead">
+    <p>Something wrong, or something missing? Write to
+    <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a>. Please include your device
+    model, your iOS version, and what you were doing when it happened &mdash; it makes a fix much
+    more likely.</p>
+  </div>
+
+  <h2>The screen is black</h2>
+  <p>Open Settings &gt; Privacy &amp; Security &gt; Camera and make sure VGA Cam is allowed.
+  If the app never asked for permission, delete it and install it again.</p>
+
+  <h2>Nothing is saved</h2>
+  <p>Open Settings &gt; Privacy &amp; Security &gt; Photos and make sure VGA Cam may add
+  photos. The app only ever adds; it cannot read the photographs you already have.</p>
+
+  <h2>My video has no sound</h2>
+  <p>Check Settings &gt; Privacy &amp; Security &gt; Microphone. Without it, video still
+  records &mdash; silently.</p>
+
+  <h2>The picture is too rough</h2>
+  <p>That is the app. For something closer to normal, pick a later year on the ERA dial and
+  raise QUALITY. For something far worse, raise GLITCH.</p>
+
+  <h2>Can I get a clean version of a photo?</h2>
+  <p>No. The degraded JPEG is the photograph; no clean original is kept behind it. Take the
+  same shot with the built-in camera if you need one.</p>
+
+  <h2>Why is it landscape only?</h2>
+  <p>It is modelled on a camera you hold in two hands, with the screen on the left and the
+  controls on the right.</p>
+
+  <h2>Privacy</h2>
+  <p>VGA Cam collects nothing and makes no network connections. The full policy is
+  <a href="vgacam.html">here</a>.</p>
+
+  <!-- ───────────────────────────────────────────── -->
+
+  <div class="ja">
+    <h1>VGA Cam — サポート</h1>
+    <p class="sub">低画素デジカメ &nbsp;&middot;&nbsp; k.odk</p>
+
+    <div class="lead">
+      <p>不具合のご報告、ご要望は
+      <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a> までお送りください。
+      機種名、iOS のバージョン、どの操作で起きたかを書き添えていただけると、直せる可能性が
+      ぐっと上がります。</p>
+    </div>
+
+    <h2>画面が真っ暗です</h2>
+    <p>設定 &gt; プライバシーとセキュリティ &gt; カメラ で、VGA Cam が許可されているか
+    確認してください。一度も許可を聞かれていない場合は、削除して入れ直してください。</p>
+
+    <h2>写真が保存されません</h2>
+    <p>設定 &gt; プライバシーとセキュリティ &gt; 写真 で、VGA Cam に写真の追加が許可されて
+    いるか確認してください。このアプリは追加しかできず、すでにある写真を読むことはできません。</p>
+
+    <h2>動画に音が入りません</h2>
+    <p>設定 &gt; プライバシーとセキュリティ &gt; マイク を確認してください。許可がなくても、
+    無音の動画としては撮影できます。</p>
+
+    <h2>画質が悪すぎます</h2>
+    <p>そういうアプリです。少しまともにしたい場合は ERA を新しい年代にして QUALITY を
+    上げてください。逆にもっと壊したい場合は GLITCH を上げてください。</p>
+
+    <h2>きれいな元データはありますか</h2>
+    <p>ありません。劣化したJPEGそのものが写真で、裏にきれいな元画像は残していません。</p>
+
+    <h2>なぜ横向き固定なのですか</h2>
+    <p>両手で構えるカメラを模しているためです。左に液晶、右に操作部という作りにしています。</p>
+
+    <h2>プライバシー</h2>
+    <p>VGA Cam は何も集めず、通信も行いません。全文は
+    <a href="vgacam.html">こちら</a>。</p>
+
+    <footer>
+      Last updated 6 September 2026 &nbsp;&middot;&nbsp; 最終更新 2026年9月6日
+    </footer>
+  </div>
+
+</main>
+</body>
+</html>
