@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Tīwesdæg</title>
+<style>
+  :root {
+    --bg: #f2f2f0;
+    --card: #dedede;
+    --ink: #1e1e1c;
+    --muted: #5a5a58;
+    --rule: #c4c4c2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, "Helvetica Neue", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 1.5rem; font-weight: 400; letter-spacing: .04em; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); font-size: .875rem; margin: 0 0 3rem; }
+  h2 {
+    font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); margin: 3rem 0 .75rem; padding-bottom: .5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .5rem; }
+  a { color: var(--ink); }
+  .lead {
+    background: var(--card); border-radius: 10px; padding: 1.25rem 1.5rem; margin: 0 0 1rem;
+  }
+  .lead p:last-child { margin-bottom: 0; }
+  .ja { margin-top: 5rem; }
+  .back { display: inline-block; margin-bottom: 2.5rem; font-size: .8125rem;
+          color: var(--muted); text-decoration: none; }
+  .apps { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .apps li { margin: 0 0 .75rem; }
+  .apps a { display: block; background: var(--card); border-radius: 10px;
+            padding: 1rem 1.25rem; text-decoration: none; }
+  .apps strong { display: block; font-weight: 500; }
+  .apps span { color: var(--muted); font-size: .875rem; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: .8125rem; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1a1a19; --card: #262625; --ink: #e8e8e6; --muted: #9a9a97; --rule: #3a3a38; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <a class="back" href="./">&larr; All apps / アプリ一覧</a>
+
+  <h1>Tīwesdæg — Support</h1>
+  <p class="sub">Sound-as-oscillator synthesiser &nbsp;&middot;&nbsp; k.odk</p>
+
+  <div class="lead">
+    <p>Something wrong, or something missing? Write to
+    <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a>. Please include your device
+    model, your iOS version, and what you were doing when it happened &mdash; it makes a fix much
+    more likely.</p>
+  </div>
+
+  <h2>Nothing is playing</h2>
+  <p>Check the silent switch and the volume first. Both decks start with a triangle wave
+  loaded, so there should be sound at launch. If you have recorded over a deck with something
+  near silence, the oscillator is reading silence — record again, or move the window.</p>
+
+  <h2>The microphone records nothing</h2>
+  <p>iOS asks for permission the first time. If it was declined, open Settings &rarr; Privacy
+  &amp; Security &rarr; Microphone and turn Tīwesdæg on. Another app holding the microphone
+  (a call, a recorder) can also block it.</p>
+
+  <h2>How do I save what I have made?</h2>
+  <p>The eight circles down the side are the presets. <strong>Hold</strong> a circle to save,
+  <strong>tap</strong> it to recall. A circle turns orange once something is in it, and the one
+  you are currently on is the brightest. Saved presets survive quitting the app, and each one
+  keeps its own copy of the material, so re-recording later does not disturb it. The bin
+  clears the preset you are on.</p>
+
+  <h2>My presets disappeared</h2>
+  <p>Presets live in the app's own storage. Deleting the app, or letting iOS offload it,
+  removes them. There is no cloud copy — nothing leaves your device.</p>
+
+  <h2>Nothing comes out of my audio interface</h2>
+  <p>Open the AUDIO panel and set OUTPUT to the device. Some interfaces need to be connected
+  before the app launches. If it still will not sound, tell me the make and model — that is the
+  fastest way to get it fixed.</p>
+
+  <h2>The camera does nothing</h2>
+  <p>It takes a single still photograph, which becomes the background and is read across as a
+  row of voltages. If permission was declined, turn it on in Settings &rarr; Privacy &amp;
+  Security &rarr; Camera. No photo is ever saved to your library.</p>
+
+  <h2>The sound keeps going after I leave the app</h2>
+  <p>That is deliberate: it keeps playing while you switch apps or lock the screen. To stop it,
+  use the pause on the lock screen or in Control Centre, or close the app.</p>
+
+  <h2>Can I export the sound?</h2>
+  <p>Not from inside the app. Use the iOS screen recorder, or run the output into a recorder
+  through an audio interface.</p>
+
+  <h2>Privacy</h2>
+  <p>Nothing is collected and nothing is sent anywhere. The full policy is
+  <a href="tiwesdaeg.html">here</a>.</p>
+
+  <div class="ja">
+    <h1>Tīwesdæg — サポート</h1>
+    <p class="sub">音を振動子にするシンセ &nbsp;&middot;&nbsp; k.odk</p>
+
+    <div class="lead">
+      <p>不具合のご報告、ご要望は
+      <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a> までお送りください。
+      端末の機種名、iOS のバージョン、どの操作で起きたかを書き添えていただけると、
+      直せる可能性がぐっと上がります。</p>
+    </div>
+
+    <h2>音が鳴りません</h2>
+    <p>まずマナースイッチと音量。二つの台には最初から三角波が入っているので、
+    起動直後から鳴るはずです。無音に近いものを録った場合は、振動子が無音を読んでいます。
+    録り直すか、窓を動かしてください。</p>
+
+    <h2>マイクで録れません</h2>
+    <p>初回に iOS が許可を聞きます。断った場合は、設定 → プライバシーとセキュリティ
+    → マイクで Tīwesdæg を入にしてください。</p>
+
+    <h2>作ったものをどう保存しますか</h2>
+    <p>横に並ぶ八つの丸が控えです。<strong>長押しで保存</strong>、<strong>単押しで呼び出し</strong>。
+    入っている丸はオレンジになり、いま呼んでいる一つだけが濃く出ます。控えはアプリを
+    閉じても残り、それぞれが素材の写しを持つので、あとで録り直しても崩れません。
+    ごみ箱で、いまの控えを空にできます。</p>
+
+    <h2>控えが消えました</h2>
+    <p>控えは端末内のアプリ専用の場所にあります。アプリを削除するか、iOS が自動で
+    退避（オフロード）すると消えます。</p>
+
+    <h2>外の器から音が出ません</h2>
+    <p>AUDIO の卓で OUTPUT をその機器にしてください。先に繋いでからアプリを起動しないと
+    見えない機器もあります。それでも出なければ、機種名を教えてください。</p>
+
+    <h2>カメラが効きません</h2>
+    <p>静止画を一枚撮るだけです。その絵が地になり、横に読んで電圧の列になります。
+    許可を断った場合は、設定 → プライバシーとセキュリティ → カメラで入に。
+    写真がライブラリに保存されることはありません。</p>
+
+    <h2>アプリを離れても鳴りつづけます</h2>
+    <p>そういう作りです。止めるときはロック画面またはコントロールセンターの停止、
+    もしくはアプリを閉じてください。</p>
+
+    <h2>作った音を書き出せますか</h2>
+    <p>アプリの中からはできません。iOS の画面収録か、外の器を通して録音機へ。</p>
+
+    <h2>プライバシー</h2>
+    <p>何も集めず、どこへも送りません。全文は
+    <a href="tiwesdaeg.html">こちら</a>。</p>
+  </div>
+
+  <footer>
+    Last updated 19 September 2026 &nbsp;&middot;&nbsp; 最終更新 2026年9月19日
+  </footer>
+
+</main>
+</body>
+</html>
