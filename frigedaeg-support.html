@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Frīgedæg</title>
+<style>
+  :root {
+    --bg: #f2f2f0;
+    --card: #dedede;
+    --ink: #1e1e1c;
+    --muted: #5a5a58;
+    --rule: #c4c4c2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, "Helvetica Neue", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 1.5rem; font-weight: 400; letter-spacing: .04em; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); font-size: .875rem; margin: 0 0 3rem; }
+  h2 {
+    font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); margin: 3rem 0 .75rem; padding-bottom: .5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .5rem; }
+  a { color: var(--ink); }
+  .lead {
+    background: var(--card); border-radius: 10px; padding: 1.25rem 1.5rem; margin: 0 0 1rem;
+  }
+  .lead p:last-child { margin-bottom: 0; }
+  .ja { margin-top: 5rem; }
+  .back { display: inline-block; margin-bottom: 2.5rem; font-size: .8125rem;
+          color: var(--muted); text-decoration: none; }
+  .apps { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .apps li { margin: 0 0 .75rem; }
+  .apps a { display: block; background: var(--card); border-radius: 10px;
+            padding: 1rem 1.25rem; text-decoration: none; }
+  .apps strong { display: block; font-weight: 500; }
+  .apps span { color: var(--muted); font-size: .875rem; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: .8125rem; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1a1a19; --card: #262625; --ink: #e8e8e6; --muted: #9a9a97; --rule: #3a3a38; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <a class="back" href="./">&larr; All apps / アプリ一覧</a>
+
+  <h1>Frīgedæg — Support</h1>
+  <p class="sub">Granular instrument &nbsp;&middot;&nbsp; k.odk</p>
+
+  <div class="lead">
+    <p>Something wrong, or something missing? Write to
+    <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a>. Please include your device
+    model, your iOS version, and what you were doing when it happened &mdash; it makes a fix much
+    more likely.</p>
+  </div>
+
+  <h2>Nothing is playing</h2>
+  <p>A test tone is loaded when the app first opens, so it should make sound straight away.
+  Check the silent switch and the volume, then the MIXER: the grain level and the output
+  level both have to be up. If you have replaced the material with a recording that is mostly
+  silence, the grains will be landing on silence — record again, or move the place pad.</p>
+
+  <h2>The microphone records nothing</h2>
+  <p>iOS asks for permission the first time. If it was declined, open Settings &rarr; Privacy
+  &amp; Security &rarr; Microphone and turn Frīgedæg on, or find the app in Settings and turn
+  the microphone switch on there. Another app holding the microphone (a call, a recorder) can
+  also block it — close that app and try again.</p>
+
+  <h2>The sound keeps going after I leave the app</h2>
+  <p>That is deliberate: it keeps playing while you switch apps or lock the screen, the way an
+  instrument should. To stop it, use the pause on the lock screen or in Control Centre, or
+  close the app.</p>
+
+  <h2>My recording disappeared</h2>
+  <p>The material and the presets live in the app's own storage. Deleting the app, or letting
+  iOS offload it, removes them. There is no cloud copy — nothing leaves your device.</p>
+
+  <h2>Can I export the sound?</h2>
+  <p>Not from inside the app. Use the iOS screen recorder, or run the output into a recorder
+  through an audio interface.</p>
+
+  <h2>It sounds thin, or it distorts</h2>
+  <p>Grain length and density interact: very short grains over a dense scatter turn into noise,
+  very long grains over a loud recording clip. Pull the output level down first, then the grain
+  level. Headphones or a proper speaker help — a lot of this instrument lives in the low end.</p>
+
+  <h2>Where do the ideas come from?</h2>
+  <p>The credits page inside the app says it in full. Nothing of anyone else's is reproduced in
+  the app — no schematic, no layout, no diagram, no text, no product names. The models were
+  written from published descriptions and from listening to the result.</p>
+
+  <h2>Privacy</h2>
+  <p>Nothing is collected and nothing is sent anywhere. The full policy is
+  <a href="frigedaeg.html">here</a>.</p>
+
+  <!-- ──────────────────────────── -->
+
+  <div class="ja">
+    <h1>Frīgedæg — サポート</h1>
+    <p class="sub">グラニュラー楽器 &nbsp;&middot;&nbsp; k.odk</p>
+
+    <div class="lead">
+      <p>不具合のご報告、ご要望は
+      <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a> までお送りください。
+      端末の機種名、iOS のバージョン、どの操作で起きたかを書き添えていただけると、
+      直せる可能性がぐっと上がります。</p>
+    </div>
+
+    <h2>音が鳴りません</h2>
+    <p>初回起動時に試しの音が入っているので、開いた瞬間から鳴るはずです。
+    マナースイッチと音量、次に MIXER を見てください。粒の量と出口の量の
+    両方が上がっている必要があります。無音に近い録音に差し替えた場合は、粒が無音の上を
+    走っています。録り直すか、場所の板を動かしてください。</p>
+
+    <h2>マイクで録れません</h2>
+    <p>初回に iOS が許可を聞きます。断った場合は、設定 → プライバシーとセキュリティ
+    → マイクで Frīgedæg を入にしてください。他のアプリ（通話や録音アプリ）が
+    マイクを掘んでいるとも録れません。そちらを閉じてからお試しください。</p>
+
+    <h2>アプリを離れても鳴りつづけます</h2>
+    <p>そういう作りです。他のアプリに移っても、画面を消しても鳴り続けます。
+    止めるときは、ロック画面またはコントロールセンターの停止、もしくはアプリを
+    閉じてください。</p>
+
+    <h2>録音が消えました</h2>
+    <p>素材もプリセットも端末内のアプリ専用の場所にあります。アプリを削除するか、
+    iOS が自動で退避（オフロード）すると消えます。控えはクラウドにありません。</p>
+
+    <h2>作った音を書き出せますか</h2>
+    <p>アプリの中からはできません。iOS の画面収録を使うか、オーディオインターフェースで
+    外の録音機へ出してください。</p>
+
+    <h2>音が薄い・歪む</h2>
+    <p>粒の長さと密度は絡み合っています。短い粒を密に撮くと雑音になり、長い粒を
+    大きい録音に当てると割れます。まず出口の量、次に粒の量を下げてください。
+    イヤホンか、低い音の出るスピーカーをお勧めします。</p>
+
+    <h2>考えの出どころは</h2>
+    <p>アプリ内のクレジットに書いてあります。他人のものは何も複製していません。
+    回路図も、基板の配置も、図も、文章も、製品名もありません。公開されている
+    振る舞いの説明と、鳴らしてみた結果から書いたものです。</p>
+
+    <h2>プライバシー</h2>
+    <p>何も集めず、どこへも送りません。全文は
+    <a href="frigedaeg.html">こちら</a>。</p>
+  </div>
+
+  <footer>
+    Last updated 19 September 2026 &nbsp;&middot;&nbsp; 最終更新 2026年9月19日
+  </footer>
+
+</main>
+</body>
+</html>
