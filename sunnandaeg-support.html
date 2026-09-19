@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Sunnandæg</title>
+<style>
+  :root {
+    --bg: #f2f2f0;
+    --card: #dedede;
+    --ink: #1e1e1c;
+    --muted: #5a5a58;
+    --rule: #c4c4c2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, "Helvetica Neue", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 1.5rem; font-weight: 400; letter-spacing: .04em; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); font-size: .875rem; margin: 0 0 3rem; }
+  h2 {
+    font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); margin: 3rem 0 .75rem; padding-bottom: .5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .5rem; }
+  a { color: var(--ink); }
+  .lead {
+    background: var(--card); border-radius: 10px; padding: 1.25rem 1.5rem; margin: 0 0 1rem;
+  }
+  .lead p:last-child { margin-bottom: 0; }
+  .ja { margin-top: 5rem; }
+  .back { display: inline-block; margin-bottom: 2.5rem; font-size: .8125rem;
+          color: var(--muted); text-decoration: none; }
+  .apps { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .apps li { margin: 0 0 .75rem; }
+  .apps a { display: block; background: var(--card); border-radius: 10px;
+            padding: 1rem 1.25rem; text-decoration: none; }
+  .apps strong { display: block; font-weight: 500; }
+  .apps span { color: var(--muted); font-size: .875rem; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: .8125rem; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1a1a19; --card: #262625; --ink: #e8e8e6; --muted: #9a9a97; --rule: #3a3a38; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <a class="back" href="./">&larr; All apps / アプリ一覧</a>
+
+  <h1>Sunnandæg — Support</h1>
+  <p class="sub">Synthesiser &nbsp;&middot;&nbsp; k.odk</p>
+
+  <div class="lead">
+    <p>Something wrong, or something missing? Write to
+    <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a>. Please include your device
+    model, your iOS version, and what you were doing when it happened &mdash; it makes a fix much
+    more likely.</p>
+  </div>
+
+  <h2>Nothing is playing</h2>
+  <p>The instrument starts as a single plain sine and stays there until you move something.
+  Drag the four XY pads: the left pair open the three folding stages and the feedback,
+  the right pair set the pan blend and how far the filter follows the sound. If you still
+  hear nothing, check the volume and the Ceil slider in the output panel.</p>
+
+  <h2>It got loud, or it started screaming</h2>
+  <p>Raising Q while the filter is being modulated quickly is the usual cause. Pull the Q
+  slider down, or set the shift register's destination to &ldquo;&mdash;&rdquo; so it stops
+  moving the cutoff. Press INIT to return everything to the plain sine.</p>
+
+  <h2>The sound keeps going after I leave the app</h2>
+  <p>That is on purpose &mdash; the instrument keeps sounding in the background so a drone can
+  run while you do something else. Pause it from the lock screen or Control Centre, the same
+  way you would pause music.</p>
+
+  <h2>The camera does nothing</h2>
+  <p>Open Settings &gt; Privacy &amp; Security &gt; Camera and make sure Sunnand&aelig;g is
+  allowed. The camera only runs while camera mode is switched on, and it moves the pointers
+  on the pads rather than showing a picture.</p>
+
+  <h2>Micro Sound has no material</h2>
+  <p>Record something first: hold the centre button to capture through the microphone. If the
+  app never asked for microphone permission, delete it and install it again.</p>
+
+  <h2>My presets disappeared</h2>
+  <p>Presets are saved when you hold a slot, and they live only on your device. Deleting the
+  app deletes them with it.</p>
+
+  <h2>Can I export the sound?</h2>
+  <p>Not yet. Sunnand&aelig;g records into itself for Micro Sound but cannot write a file out.
+  If that is what you need, say so in an email &mdash; it helps decide what comes next.</p>
+
+  <h2>Privacy</h2>
+  <p>Sunnand&aelig;g collects nothing and makes no network connections. The full policy is
+  <a href="sunnandaeg.html">here</a>.</p>
+
+  <div class="ja">
+    <h1>Sunnandæg — サポート</h1>
+    <p class="sub">シンセサイザー &nbsp;&middot;&nbsp; k.odk</p>
+
+    <div class="lead">
+      <p>不具合のご報告、ご要望は
+      <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a> までお送りください。
+      端末の機種名、iOS のバージョン、どの操作で起きたかを書き添えていただけると、
+      直せる可能性がぐっと上がります。</p>
+    </div>
+
+    <h2>音が鳴りません</h2>
+    <p>立ち上がりは素の正弦一本で、何かを動かすまでそのままです。
+    四枚の XY 板を動かしてください。左の二枚が三段の折り返しと帰還、
+    右の二枚が定位とフィルターの追従量です。それでも鳴らないときは、
+    音量と出口の Ceil を確かめてください。</p>
+
+    <h2>音が大きすぎる・発振する</h2>
+    <p>フィルターが速く揺されているところへ Q を上げるのが原因です。
+    Q を下げるか、シフトレジスタの送り先を「—」にしてカットオフを
+    振らないようにしてください。INIT を押せば、素の正弦に戻ります。</p>
+
+    <h2>アプリを離れても鳴りつづけます</h2>
+    <p>そういう仕様です。他のことをしながら鳴らし続けられるよう、背面でも止まりません。
+    止めるときは、音楽と同じようにロック画面かコントロールセンターから一時停止してください。</p>
+
+    <h2>カメラが効きません</h2>
+    <p>設定 &gt; プライバシーとセキュリティ &gt; カメラ で、Sunnandæg が許可されているか
+    確認してください。カメラは入にしているあいだだけ回り、絵を映すのではなく
+    板の上の点を動かします。</p>
+
+    <h2>Micro Sound に素材がありません</h2>
+    <p>まず録ってください。中央の釦を長押しするとマイクから取り込みます。
+    マイクの許可を訞かれた記憶がない場合は、一度アプリを削除して入れ直してください。</p>
+
+    <h2>控えが消えました</h2>
+    <p>控えは枠を長押ししたときに保存され、端末の中だけに残ります。
+    アプリを削除すると一緒に消えます。</p>
+
+    <h2>作った音を書き出せますか</h2>
+    <p>いまはできません。Micro Sound のために自分の中へ録ることはできますが、
+    ファイルとしては出せません。必要でしたらメールで教えてください。
+    次に何を作るかの判断材料になります。</p>
+
+    <h2>プライバシー</h2>
+    <p>Sunnandæg は何も集めず、網へも繋ぎません。全文は
+    <a href="sunnandaeg.html">こちら</a>。</p>
+  </div>
+
+</main>
+</body>
+</html>
