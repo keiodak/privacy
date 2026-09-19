@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Mōnandæg</title>
+<style>
+  :root {
+    --bg: #f2f2f0;
+    --card: #dedede;
+    --ink: #1e1e1c;
+    --muted: #5a5a58;
+    --rule: #c4c4c2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, "Helvetica Neue", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 1.5rem; font-weight: 400; letter-spacing: .04em; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); font-size: .875rem; margin: 0 0 3rem; }
+  h2 {
+    font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); margin: 3rem 0 .75rem; padding-bottom: .5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .5rem; }
+  a { color: var(--ink); }
+  .lead {
+    background: var(--card); border-radius: 10px; padding: 1.25rem 1.5rem; margin: 0 0 1rem;
+  }
+  .lead p:last-child { margin-bottom: 0; }
+  .ja { margin-top: 5rem; }
+  .back { display: inline-block; margin-bottom: 2.5rem; font-size: .8125rem;
+          color: var(--muted); text-decoration: none; }
+  .apps { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .apps li { margin: 0 0 .75rem; }
+  .apps a { display: block; background: var(--card); border-radius: 10px;
+            padding: 1rem 1.25rem; text-decoration: none; }
+  .apps strong { display: block; font-weight: 500; }
+  .apps span { color: var(--muted); font-size: .875rem; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: .8125rem; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1a1a19; --card: #262625; --ink: #e8e8e6; --muted: #9a9a97; --rule: #3a3a38; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <a class="back" href="./">&larr; All apps / アプリ一覧</a>
+
+  <h1>Mōnandæg — Support</h1>
+  <p class="sub">Field recorder / looper &nbsp;&middot;&nbsp; k.odk</p>
+
+  <div class="lead">
+    <p>Something wrong, or something missing? Write to
+    <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a>. Please include your device
+    model, your iOS version, and what you were doing when it happened &mdash; it makes a fix much
+    more likely.</p>
+  </div>
+
+  <h2>Nothing is playing</h2>
+  <p>The instrument has nothing to play until you give it a take. Press RECORD to capture from
+  the microphone, or OPEN to take one off the shelf. Then check the silent switch, the volume,
+  and the deck level.</p>
+
+  <h2>The microphone records nothing</h2>
+  <p>iOS asks for permission the first time. If it was declined, open Settings &rarr; Privacy
+  &amp; Security &rarr; Microphone and turn Mōnandæg on. Another app holding the microphone
+  (a call, a recorder) can also block it.</p>
+
+  <h2>How do I get my own sound in, or my takes out?</h2>
+  <p>The shelf is this app's own folder, visible in the Files app under On My iPhone &rarr;
+  Mōnandæg. Copy audio in there and it appears under OPEN; copy takes out of there to keep
+  them. Nothing is uploaded either way.</p>
+
+  <h2>The two loops drift apart</h2>
+  <p>That is what happens with LINK off — each deck runs on its own. Turn LINK on and the
+  shorter loop lines its head up with the longer one every time it comes round, so the two stay
+  in step however different their lengths are.</p>
+
+  <h2>The spoken line sounds wrong, or says nothing</h2>
+  <p>The voice comes from the ones installed on your device. Pick the matching language with
+  &lt;&lt; and &gt;&gt;. If a language has no voice installed, iOS has nothing to read with —
+  add one in Settings &rarr; Accessibility &rarr; Spoken Content &rarr; Voices.</p>
+
+  <h2>The sound keeps going after I leave the app</h2>
+  <p>That is deliberate: it keeps playing while you switch apps or lock the screen. To stop it,
+  use the pause on the lock screen or in Control Centre, or close the app.</p>
+
+  <h2>It distorts, or a room makes it scream</h2>
+  <p>Several rooms feed back by design. Pull SEND and CROSS down first, then the deck level.
+  The limiter at the exit catches peaks but cannot undo a loop that is feeding itself.</p>
+
+  <h2>My takes disappeared</h2>
+  <p>Takes live in the app's own folder. Deleting the app, or letting iOS offload it, removes
+  them. There is no cloud copy — copy anything you want to keep out through the Files app.</p>
+
+  <h2>Privacy</h2>
+  <p>Nothing is collected and nothing is sent anywhere. The full policy is
+  <a href="monandaeg.html">here</a>.</p>
+
+  <div class="ja">
+    <h1>Mōnandæg — サポート</h1>
+    <p class="sub">野外録り機とルーパー &nbsp;&middot;&nbsp; k.odk</p>
+
+    <div class="lead">
+      <p>不具合のご報告、ご要望は
+      <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a> までお送りください。
+      端末の機種名、iOS のバージョン、どの操作で起きたかを書き添えていただけると、
+      直せる可能性がぐっと上がります。</p>
+    </div>
+
+    <h2>音が鳴りません</h2>
+    <p>録るまでは鳴らすものがありません。RECORD でマイクから取るか、OPEN で棚から
+    選んでください。そのあとでマナースイッチ、音量、台の量を見てください。</p>
+
+    <h2>マイクで録れません</h2>
+    <p>初回に iOS が許可を聞きます。断った場合は、設定 → プライバシーとセキュリティ
+    → マイクで Mōnandæg を入にしてください。</p>
+
+    <h2>自分の音を入れたい・録った音を出したい</h2>
+    <p>棚はこのアプリ専用のフォルダーで、ファイルアプリの「この iPhone 内」→ Mōnandæg
+    から見えます。そこへ音声を入れれば OPEN に並び、取り出せば手元に残せます。
+    どちらもアップロードはしません。</p>
+
+    <h2>二本の輪がずれていく</h2>
+    <p>LINK を切っていると、二本はそれぞれ勝手に回ります。LINK を入にすれば、
+    短いほうが一周するたびに長いほうへ頭を揃えるので、長さが違っても離れません。</p>
+
+    <h2>読ませた声がおかしい・鳴らない</h2>
+    <p>声は端末に入っているものを使います。&lt;&lt; と &gt;&gt; で言語を合わせてください。
+    その言語の声が入っていなければ読めません。設定 → アクセシビリティ →
+    読み上げコンテンツ → 声 から追加できます。</p>
+
+    <h2>アプリを離れても鳴りつづけます</h2>
+    <p>そういう作りです。止めるときはロック画面またはコントロールセンターの停止、
+    もしくはアプリを閉じてください。</p>
+
+    <h2>歪む・部屋によっては叫ぶ</h2>
+    <p>戻りを持つ部屋がいくつかあります。まず SEND と CROSS、次に台の量を下げてください。
+    出口のリミッターは山を押さえますが、自分を食べている輪は止められません。</p>
+
+    <h2>録った音が消えました</h2>
+    <p>棚はアプリ専用のフォルダーにあります。アプリを削除するか、iOS が自動で退避すると
+    消えます。残したいものはファイルアプリから取り出しておいてください。</p>
+
+    <h2>プライバシー</h2>
+    <p>何も集めず、どこへも送りません。全文は
+    <a href="monandaeg.html">こちら</a>。</p>
+  </div>
+
+  <footer>
+    Last updated 20 September 2026 &nbsp;&middot;&nbsp; 最終更新 2026年9月20日
+  </footer>
+
+</main>
+</body>
+</html>
