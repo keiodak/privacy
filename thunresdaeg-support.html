@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Þunresdæg</title>
+<style>
+  :root {
+    --bg: #f2f2f0;
+    --card: #dedede;
+    --ink: #1e1e1c;
+    --muted: #5a5a58;
+    --rule: #c4c4c2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, "Helvetica Neue", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 1.5rem; font-weight: 400; letter-spacing: .04em; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); font-size: .875rem; margin: 0 0 3rem; }
+  h2 {
+    font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); margin: 3rem 0 .75rem; padding-bottom: .5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .5rem; }
+  a { color: var(--ink); }
+  .lead {
+    background: var(--card); border-radius: 10px; padding: 1.25rem 1.5rem; margin: 0 0 1rem;
+  }
+  .lead p:last-child { margin-bottom: 0; }
+  .ja { margin-top: 5rem; }
+  .back { display: inline-block; margin-bottom: 2.5rem; font-size: .8125rem;
+          color: var(--muted); text-decoration: none; }
+  .apps { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .apps li { margin: 0 0 .75rem; }
+  .apps a { display: block; background: var(--card); border-radius: 10px;
+            padding: 1rem 1.25rem; text-decoration: none; }
+  .apps strong { display: block; font-weight: 500; }
+  .apps span { color: var(--muted); font-size: .875rem; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: .8125rem; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1a1a19; --card: #262625; --ink: #e8e8e6; --muted: #9a9a97; --rule: #3a3a38; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <a class="back" href="./">&larr; All apps / アプリ一覧</a>
+
+  <h1>Þunresdæg — Support</h1>
+  <p class="sub">Synthesiser &amp; effects board &nbsp;&middot;&nbsp; k.odk</p>
+
+  <div class="lead">
+    <p>Something wrong, or something missing? Write to
+    <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a>. Please include your device
+    model, your iOS version, and what you were doing when it happened &mdash; it makes a fix much
+    more likely.</p>
+  </div>
+
+  <h2>Nothing is playing</h2>
+  <p>Check the silent switch and the volume first. Then the board: the oscillators have to
+  reach OUT. If you have pulled cables out, or cleared the board, there may be no path to the
+  output at all. Recall a preset, or use the sum switch under the eraser in the OUT column to
+  put both channels back together.</p>
+
+  <h2>It plays, but nothing changes when I move a pad</h2>
+  <p>The eight pads are not knobs. They are voltage sources, and what each one moves is
+  decided on the board or in the matrix. A pad with nothing patched from it does nothing —
+  patch it to a cv inlet on a pedal, or to a cell in the 4&times;4 matrix.</p>
+
+  <h2>The sound keeps going after I leave the app</h2>
+  <p>That is deliberate: it keeps playing while you switch apps or lock the screen, the way an
+  instrument should. To stop it, use the pause on the lock screen or in Control Centre, or
+  close the app.</p>
+
+  <h2>The camera does nothing</h2>
+  <p>iOS asks for permission the first time. If it was declined, open Settings &rarr; Privacy
+  &amp; Security &rarr; Camera and turn Þunresdæg on. Camera mode also needs light and movement in
+  frame — pointed at a still wall it has nothing to read.</p>
+
+  <h2>My presets disappeared</h2>
+  <p>Presets live in the app's own storage. Deleting the app, or letting iOS offload it,
+  removes them. There is no cloud copy — nothing leaves your device. Tap a preset to recall,
+  hold to save; the bin at the right, then a number, deletes that one.</p>
+
+  <h2>It distorts, or it suddenly goes loud</h2>
+  <p>Feedback paths on the board can build up quickly. Pull FEEDBK or the feedback send down,
+  then the level of the pedal you are on. The limiter at the exit catches peaks but cannot fix
+  a runaway loop.</p>
+
+  <h2>Can I export the sound?</h2>
+  <p>Not from inside the app. Use the iOS screen recorder, or run the output into a recorder
+  through an audio interface.</p>
+
+  <h2>Privacy</h2>
+  <p>Nothing is collected and nothing is sent anywhere. The full policy is
+  <a href="thunresdaeg.html">here</a>.</p>
+
+  <div class="ja">
+    <h1>Þunresdæg — サポート</h1>
+    <p class="sub">シンセサイザーと効果の盤 &nbsp;&middot;&nbsp; k.odk</p>
+
+    <div class="lead">
+      <p>不具合のご報告、ご要望は
+      <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a> までお送りください。
+      端末の機種名、iOS のバージョン、どの操作で起きたかを書き添えていただけると、
+      直せる可能性がぐっと上がります。</p>
+    </div>
+
+    <h2>音が鳴りません</h2>
+    <p>まずマナースイッチと音量。次に盤を見てください。振動子から OUT まで道が
+    繋がっている必要があります。線を抜いたり盤を空にした後は、出口への道が
+    一本も無いことがあります。控えを呼ぶか、OUT の列の消しゴムの下にある和の切り替えを使ってください。</p>
+
+    <h2>鳴るのに、板を動かしても何も変わらない</h2>
+    <p>八枚の板はつまみではありません。電圧の源で、何を動かすかは盤と行列で決めます。
+    何も掘さっていない板は何もしません。踏み台の cv の口か、4×4 の行列のマスへ繋いでください。</p>
+
+    <h2>アプリを離れても鳴りつづけます</h2>
+    <p>そういう作りです。止めるときはロック画面またはコントロールセンターの停止、
+    もしくはアプリを閉じてください。</p>
+
+    <h2>カメラが効きません</h2>
+    <p>初回に iOS が許可を聞きます。断った場合は、設定 → プライバシーとセキュリティ
+    → カメラで Þunresdæg を入にしてください。明暗と動きを読むので、動かない壁に向けていると
+    読むものがありません。</p>
+
+    <h2>控えが消えました</h2>
+    <p>控えは端末内のアプリ専用の場所にあります。アプリを削除するか、iOS が
+    自動で退避（オフロード）すると消えます。単押しで呼び出し、長押しで保存です。</p>
+
+    <h2>歪む・突然大きくなる</h2>
+    <p>盤の上の戻りの道はすぐに育ちます。FEEDBK や戻しの量を下げてから、
+    その踏み台の量を下げてください。出口のリミッターは山を押さえますが、
+    暴れた輪を止めることはできません。</p>
+
+    <h2>作った音を書き出せますか</h2>
+    <p>アプリの中からはできません。iOS の画面収録か、オーディオインターフェースで
+    外の録音機へ出してください。</p>
+
+    <h2>プライバシー</h2>
+    <p>何も集めず、どこへも送りません。全文は
+    <a href="thunresdaeg.html">こちら</a>。</p>
+  </div>
+
+  <footer>
+    Last updated 19 September 2026 &nbsp;&middot;&nbsp; 最終更新 2026年9月19日
+  </footer>
+
+</main>
+</body>
+</html>
