@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuner — Support</title>
+<style>
+  :root {
+    --bg: #f2f2f0;
+    --card: #dedede;
+    --ink: #1e1e1c;
+    --muted: #5a5a58;
+    --rule: #c4c4c2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, "Helvetica Neue", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 1.5rem; font-weight: 400; letter-spacing: .04em; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); font-size: .875rem; margin: 0 0 3rem; }
+  h2 {
+    font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); margin: 3rem 0 .75rem; padding-bottom: .5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .5rem; }
+  a { color: var(--ink); }
+  .lead {
+    background: var(--card); border-radius: 10px; padding: 1.25rem 1.5rem; margin: 0 0 1rem;
+  }
+  .lead p:last-child { margin-bottom: 0; }
+  .ja { margin-top: 5rem; }
+  .back { display: inline-block; margin-bottom: 2.5rem; font-size: .8125rem;
+          color: var(--muted); text-decoration: none; }
+  .apps { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .apps li { margin: 0 0 .75rem; }
+  .apps a { display: block; background: var(--card); border-radius: 10px;
+            padding: 1rem 1.25rem; text-decoration: none; }
+  .apps strong { display: block; font-weight: 500; }
+  .apps span { color: var(--muted); font-size: .875rem; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: .8125rem; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1a1a19; --card: #262625; --ink: #e8e8e6; --muted: #9a9a97; --rule: #3a3a38; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <a class="back" href="./">&larr; All apps / アプリ一覧</a>
+
+  <h1>Tuner — Support</h1>
+  <p class="sub">Guitar, bass &amp; ukulele tuner &nbsp;&middot;&nbsp; k.odk</p>
+
+  <div class="lead">
+    <p>Something wrong, or something missing? Write to
+    <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a>. Please include your device
+    model, your iOS version, the instrument and what you were doing when it happened &mdash; it
+    makes a fix much more likely.</p>
+  </div>
+
+  <h2>It doesn't react to my instrument</h2>
+  <p>iOS asks for the microphone the first time. If it was declined, open Settings &rarr; Privacy
+  &amp; Security &rarr; Microphone and turn Tuner on. Another app holding the microphone (a call,
+  a recorder) can also block it. Hold the iPhone close to the instrument and pluck firmly.</p>
+
+  <h2>The reading jumps around</h2>
+  <p>Play one string at a time and let the others rest. In a loud room, open Settings and choose
+  <em>Noisy place</em>: the tuner then ignores quiet or unclear sound. Right after the pluck the
+  string is a little sharp; let it ring for a moment.</p>
+
+  <h2>What do the numbers mean?</h2>
+  <p>The dial shows how far you are from the target in Hz. The big number is what the tuner
+  hears, and <em>Target</em> is where the string should be. When the difference drops below one
+  cent the dial lights up blue and the key of that string gets a blue light.</p>
+
+  <h2>The sine is quiet, or sounds different on low notes</h2>
+  <p>An iPhone speaker can hardly play 82 Hz. Below B3 the sine gets soft overtones so you can
+  hear it at the right pitch. With headphones, turn on <em>Pure sine on low notes</em> in
+  Settings. Tap the sine bar to play or stop, use &minus; and + for semitones, and drag the bar
+  sideways for fine steps.</p>
+
+  <h2>Capo, my own tunings, intonation</h2>
+  <p>All in Settings. Set the capo fret and every string target moves with it. <em>My
+  tunings</em> lets you set each string and save the tuning under a name; it then appears in the
+  tuning menu. <em>Intonation check</em> compares the 12th-fret harmonic with the fretted 12th
+  note and tells you whether to move the saddle forward or back.</p>
+
+  <h2>Apple Watch, widget, Control Center</h2>
+  <p>With Tuner open on your iPhone, the Watch app shows the needle and the note. The widget and
+  the Control Center button just open the tuner.</p>
+
+  <h2>Privacy</h2>
+  <p>Nothing is collected and nothing is sent anywhere. The full policy is
+  <a href="tuner.html">here</a>.</p>
+
+  <!-- ──────────────────────────── -->
+
+  <div class="ja">
+    <h1>Tuner — サポート</h1>
+    <p class="sub">ギター・ベース・ウクレレのチューナー &nbsp;&middot;&nbsp; k.odk</p>
+
+    <div class="lead">
+      <p>不具合のご報告、ご要望は
+      <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a> までお送りください。
+      端末の機種名、iOS のバージョン、楽器、どの操作で起きたかを書き添えていただけると、
+      直せる可能性がぐっと上がります。</p>
+    </div>
+
+    <h2>楽器の音に反応しません</h2>
+    <p>初回に iOS がマイクの許可を聞きます。断った場合は、設定 → プライバシーと
+    セキュリティ → マイクで Tuner を入にしてください。他のアプリ（通話や録音アプリ）が
+    マイクを使っていても聴けません。iPhone を楽器に近づけ、しっかり弾いてください。</p>
+
+    <h2>表示が落ち着きません</h2>
+    <p>一度に一本だけ鳴らし、ほかの弦は止めてください。騒がしい場所では、設定の
+    マイクを <em>NOISY PLACE</em> にすると、小さい音やはっきりしない音を無視します。
+    弾いた直後の弦は少し高めに鳴るので、少し鳴らしたままにしてください。</p>
+
+    <h2>数字の見かた</h2>
+    <p>弧の目盛りは、目標とのずれを Hz で示します。大きな数字がいま聴こえている周波数、
+    <em>TARGET</em> がその弦の本来の周波数です。ずれが 1 セントを切ると円盤が青く光り、
+    その弦のボタンも青く光ります。</p>
+
+    <h2>低い音のサイン波が小さい・音色が違う</h2>
+    <p>iPhone のスピーカーは 82 Hz のような低い音をほとんど鳴らせません。そのため B3 より
+    低い音には弱い倍音を足して、正しい高さで聴こえるようにしています。イヤホンを使うときは、
+    設定の <em>PURE SINE ON LOW NOTES</em> を入にしてください。サイン波の帯をタップで
+    再生・停止、&minus; と + で半音ずつ、帯を横にドラッグすると細かく動きます。</p>
+
+    <h2>カポ、自分のチューニング、オクターブ調整</h2>
+    <p>いずれも設定にあります。カポのフレットを選ぶと各弦の目標がその分上がります。
+    <em>MY TUNINGS</em> では弦ごとに音を決めて名前を付けて保存でき、チューニングの
+    メニューに並びます。<em>INTONATION CHECK</em> は 12 フレットのハーモニクスと 12 フレットを
+    押さえた音を比べて、サドルを前に出すか後ろに下げるかを教えます。</p>
+
+    <h2>Apple Watch、ウィジェット、コントロールセンター</h2>
+    <p>iPhone で Tuner を開いているあいだ、Watch に針と音名が出ます。ウィジェットと
+    コントロールセンターのボタンは、チューナーを開くためのものです。</p>
+
+    <h2>プライバシー</h2>
+    <p>何も集めず、どこへも送りません。全文は
+    <a href="tuner.html">こちら</a>。</p>
+  </div>
+
+  <footer>
+    Last updated 28 September 2026 &nbsp;&middot;&nbsp; 最終更新 2026年9月28日
+  </footer>
+
+</main>
+</body>
+</html>
