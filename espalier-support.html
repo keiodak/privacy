@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Espalier</title>
+<style>
+  :root {
+    --bg: #f2f2f0;
+    --card: #dedede;
+    --ink: #1e1e1c;
+    --muted: #5a5a58;
+    --rule: #c4c4c2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, "Helvetica Neue", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 1.5rem; font-weight: 400; letter-spacing: .04em; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); font-size: .875rem; margin: 0 0 3rem; }
+  h2 {
+    font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); margin: 3rem 0 .75rem; padding-bottom: .5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .5rem; }
+  a { color: var(--ink); }
+  .lead {
+    background: var(--card); border-radius: 10px; padding: 1.25rem 1.5rem; margin: 0 0 1rem;
+  }
+  .lead p:last-child { margin-bottom: 0; }
+  .ja { margin-top: 5rem; }
+  .back { display: inline-block; margin-bottom: 2.5rem; font-size: .8125rem;
+          color: var(--muted); text-decoration: none; }
+  .apps { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .apps li { margin: 0 0 .75rem; }
+  .apps a { display: block; background: var(--card); border-radius: 10px;
+            padding: 1rem 1.25rem; text-decoration: none; }
+  .apps strong { display: block; font-weight: 500; }
+  .apps span { color: var(--muted); font-size: .875rem; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: .8125rem; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1a1a19; --card: #262625; --ink: #e8e8e6; --muted: #9a9a97; --rule: #3a3a38; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <a class="back" href="./">&larr; All apps / アプリ一覧</a>
+
+  <h1>Espalier — Support</h1>
+  <p class="sub">A synthesiser made of choruses &nbsp;&middot;&nbsp; k.odk</p>
+
+  <div class="lead">
+    <p>Something wrong, or something missing? Write to
+    <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a>. Please include your device
+    model, your iOS version, and what you were doing when it happened &mdash; it makes a fix much
+    more likely.</p>
+  </div>
+
+  <h2>What is it?</h2>
+  <p>Four choruses in a ring, fed back into themselves through a fold and a resonant bandpass.
+  There is no oscillator: the sound is the loop ringing. It is held near the edge
+  where it just rings and just doesn't.</p>
+
+  <h2>Nothing is playing</h2>
+  <p>Check the silent switch and the volume first. The loop swells and falls on its own; give it
+  a moment, or move a pad.</p>
+
+  <h2>It swells and goes quiet by itself</h2>
+  <p>That is deliberate: the loop creeps toward ringing, then backs off, and again.</p>
+
+  <h2>The sound keeps going after I leave the app</h2>
+  <p>Also deliberate: it keeps playing while you switch apps or lock the screen, the way an
+  instrument should. To stop it, use the pause on the lock screen or in Control Centre, or
+  close the app.</p>
+
+  <h2>Can I save a sound?</h2>
+  <p>Not in this version. Each time it starts, it starts from the same place.</p>
+
+  <h2>Can I export the sound?</h2>
+  <p>Not from inside the app. Use the iOS screen recorder, or run the output into a recorder
+  through an audio interface.</p>
+
+  <h2>Privacy</h2>
+  <p>Nothing is collected and nothing is sent anywhere. The full policy is
+  <a href="espalier.html">here</a>.</p>
+
+  <div class="ja">
+    <h1>Espalier — サポート</h1>
+    <p class="sub">コーラスでできたシンセサイザー &nbsp;&middot;&nbsp; k.odk</p>
+
+    <div class="lead">
+      <p>不具合のご報告、ご要望は
+      <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a> までお送りください。
+      端末の機種名、iOS のバージョン、どの操作で起きたかを書き添えていただけると、
+      直せる可能性がぐっと上がります。</p>
+    </div>
+
+    <h2>これは何？</h2>
+    <p>輪になった四つのコーラスを、折り返しと共振するバンドパスを通して自分に戻したものです。発振器はなく、音は輪が鳴ることで生まれます。
+    鳴る・鳴らないのぎりぎりに保たれています。</p>
+
+    <h2>音が鳴りません</h2>
+    <p>まずマナースイッチと音量。輪はひとりでにふくらんだりしぼんだりします。
+    少し待つか、パッドを動かしてください。</p>
+
+    <h2>勝手にふくらんで、静かになります</h2>
+    <p>そういう作りです。輪は鳴るほうへ少しずつ寄り、引き返し、また寄ります。</p>
+
+    <h2>アプリを離れても鳴りつづけます</h2>
+    <p>これもそういう作りです。止めるときはロック画面またはコントロールセンターの停止、
+    もしくはアプリを閉じてください。</p>
+
+    <h2>音を保存できますか</h2>
+    <p>この版ではできません。起動するたびに、同じところから始まります。</p>
+
+    <h2>作った音を書き出せますか</h2>
+    <p>アプリの中からはできません。iOS の画面収録か、オーディオインターフェースで
+    外の録音機へ出してください。</p>
+
+    <h2>プライバシー</h2>
+    <p>何も集めず、どこへも送りません。全文は
+    <a href="espalier.html">こちら</a>。</p>
+  </div>
+
+  <footer>
+    Last updated 11 October 2026 &nbsp;&middot;&nbsp; 最終更新 2026年10月11日
+  </footer>
+
+</main>
+</body>
+</html>
