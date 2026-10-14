@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Shoal</title>
+<style>
+  :root {
+    --bg: #f2f2f0;
+    --card: #dedede;
+    --ink: #1e1e1c;
+    --muted: #5a5a58;
+    --rule: #c4c4c2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, "Helvetica Neue", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 1.5rem; font-weight: 400; letter-spacing: .04em; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); font-size: .875rem; margin: 0 0 3rem; }
+  h2 {
+    font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); margin: 3rem 0 .75rem; padding-bottom: .5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .5rem; }
+  a { color: var(--ink); }
+  .lead {
+    background: var(--card); border-radius: 10px; padding: 1.25rem 1.5rem; margin: 0 0 1rem;
+  }
+  .lead p:last-child { margin-bottom: 0; }
+  .ja { margin-top: 5rem; }
+  .back { display: inline-block; margin-bottom: 2.5rem; font-size: .8125rem;
+          color: var(--muted); text-decoration: none; }
+  .apps { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .apps li { margin: 0 0 .75rem; }
+  .apps a { display: block; background: var(--card); border-radius: 10px;
+            padding: 1rem 1.25rem; text-decoration: none; }
+  .apps strong { display: block; font-weight: 500; }
+  .apps span { color: var(--muted); font-size: .875rem; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: .8125rem; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1a1a19; --card: #262625; --ink: #e8e8e6; --muted: #9a9a97; --rule: #3a3a38; }
+  }
+  pre { white-space: pre-wrap; font: 12px/1.6 ui-monospace, Menlo, monospace; background: var(--card);
+        border-radius: 10px; padding: 1rem 1.25rem; margin: 0 0 1rem; }
+</style>
+</head>
+<body>
+<main>
+
+  <a class="back" href="./">&larr; All apps / アプリ一覧</a>
+
+  <h1>Shoal — Support</h1>
+  <p class="sub">Four synths playing each other &nbsp;&middot;&nbsp; k.odk</p>
+
+  <div class="lead">
+    <p>Something wrong, or something missing? Write to
+    <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a>. Please include your device
+    model, your iOS version, and what you were doing when it happened &mdash; it makes a fix much
+    more likely.</p>
+  </div>
+
+  <h2>How do I play it?</h2>
+  <p>Four synths, A to D, play at once and hear each other through the wires. The sixteen keys at
+  the bottom play them, four keys each. GEN gives one of them something new to play. Every key
+  is explained inside the app: the &#9881; at the top right opens the settings, each one told
+  what it does.</p>
+
+  <h2>Nothing is playing</h2>
+  <p>Check the silent switch and the volume first. In TOUCH mode the synths rest until a key is
+  touched. Some patches are quiet on their own: press GEN on that synth for another.</p>
+
+  <h2>It changes by itself</h2>
+  <p>That is deliberate when DRIFT is on: GEN then runs on its own now and then. Turn DRIFT off
+  and the four stay with what they have.</p>
+
+  <h2>The sound keeps going after I leave the app</h2>
+  <p>Also deliberate: it keeps playing while you switch apps or lock the screen, the way an
+  instrument should. To stop it, close the app.</p>
+
+  <h2>Why does it ask for the microphone and the camera?</h2>
+  <p>The microphone: the four listen to the room (how loud, how bright, when a sound starts).
+  The camera: only if you choose CAM for the antennae &mdash; it is read as two light sensors.
+  Nothing is recorded. If you would rather not, say no; the rest works as before.</p>
+
+  <h2>Can I load my own patches?</h2>
+  <p>Not in this version. GEN grows new ones from the patches inside the app.</p>
+
+  <h2>Can I export the sound?</h2>
+  <p>Not from inside the app. Use the iOS screen recorder, or run the output into a recorder
+  through an audio interface.</p>
+
+  <h2>Privacy</h2>
+  <p>Nothing is collected and nothing is sent anywhere. The full policy is
+  <a href="shoal.html">here</a>.</p>
+
+  <h2>Credits and licences</h2>
+  <p>Shoal is not made or endorsed by Shbobo or Ciat-Lonbarde. It plays patches written in
+  shlisp, the language of Peter Blasser's Shbobo Shnth, and uses open-source code under the MIT
+  License:</p>
+  <ul>
+    <li>The Shnth's sound engine (a C port of its firmware), the shlisp compiler, justints,
+    justintstoo and the shbobo patches &mdash; Peter Blasser,
+    <a href="https://github.com/pblasser/shbobo">github.com/pblasser/shbobo</a></li>
+    <li>The shbobo-studies patches &mdash; aar&oacute;n montoya-moraga,
+    <a href="https://github.com/montoyamoraga/shbobo-studies">github.com/montoyamoraga/shbobo-studies</a></li>
+  </ul>
+  <pre>MIT License
+
+Copyright (c) 2021 peter blasser
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre>
+  <pre>MIT License
+
+Copyright (c) 2020 aarón montoya-moraga
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre>
+
+  <div class="ja">
+    <h1>Shoal — サポート</h1>
+    <p class="sub">互いに演奏しあう四台のシンセ &nbsp;&middot;&nbsp; k.odk</p>
+
+    <div class="lead">
+      <p>不具合のご報告、ご要望は
+      <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a> までお送りください。
+      端末の機種名、iOS のバージョン、どの操作で起きたかを書き添えていただけると、
+      直せる可能性がぐっと上がります。</p>
+    </div>
+
+    <h2>どうやって弾くの？</h2>
+    <p>A〜D の四台が同時に鳴り、結線（WIRE）でお互いを聴きあいます。下の十六の鍵で弾きます
+    （一台に四つずつ）。GEN を押すと、その一台が新しいものを鳴らします。すべての釦の説明は
+    アプリの中にあります。右上の &#9881; で開きます。</p>
+
+    <h2>音が鳴りません</h2>
+    <p>まずマナースイッチと音量。TOUCH モードでは、鍵に触れるまで休んでいます。
+    単体では静かなパッチもあるので、その一台の GEN で別のものにしてください。</p>
+
+    <h2>勝手に変わっていきます</h2>
+    <p>DRIFT が入っているときはそういう作りです。ときどき GEN がひとりでに走ります。
+    DRIFT を切れば、四台はいまのものを鳴らしつづけます。</p>
+
+    <h2>アプリを離れても鳴りつづけます</h2>
+    <p>これもそういう作りです。止めるときはアプリを閉じてください。</p>
+
+    <h2>マイクとカメラの許可を求められるのはなぜ？</h2>
+    <p>マイクは、四台が部屋の音（大きさ・明るさ・立ち上がり）を聴くためです。カメラは、
+    アンテナに CAM を選んだときだけ、光センサーとして使います。どちらも録音・撮影はしません。
+    許可しなくても、それ以外はそのまま使えます。</p>
+
+    <h2>自分のパッチを読み込めますか</h2>
+    <p>このバージョンではできません。GEN がアプリの中のパッチから新しいものを育てます。</p>
+
+    <h2>作った音を書き出せますか</h2>
+    <p>アプリの中からはできません。iOS の画面収録か、オーディオインターフェースで
+    外の録音機へ出してください。</p>
+
+    <h2>プライバシー</h2>
+    <p>何も集めず、どこへも送りません。全文は
+    <a href="shoal.html">こちら</a>。</p>
+
+    <h2>クレジットとライセンス</h2>
+    <p>Shoal は Shbobo / Ciat-Lonbarde の製品ではなく、公認も受けていません。
+    Peter Blasser の Shbobo Shnth の言語 shlisp で書かれたパッチを鳴らし、MIT ライセンスの
+    オープンソースを使っています（上の英語欄に全文）。</p>
+  </div>
+
+  <footer>
+    Last updated 14 October 2026 &nbsp;&middot;&nbsp; 最終更新 2026年10月14日
+  </footer>
+
+</main>
+</body>
+</html>
