@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sonolens+ — Support</title>
+<style>
+  :root {
+    --bg: #f2f2f0;
+    --card: #dedede;
+    --ink: #1e1e1c;
+    --muted: #5a5a58;
+    --rule: #c4c4c2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, "Helvetica Neue", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 1.5rem; font-weight: 400; letter-spacing: .04em; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); font-size: .875rem; margin: 0 0 3rem; }
+  h2 {
+    font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); margin: 3rem 0 .75rem; padding-bottom: .5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .5rem; }
+  a { color: var(--ink); }
+  .lead {
+    background: var(--card); border-radius: 10px; padding: 1.25rem 1.5rem; margin: 0 0 1rem;
+  }
+  .lead p:last-child { margin-bottom: 0; }
+  .ja { margin-top: 5rem; }
+  .back { display: inline-block; margin-bottom: 2.5rem; font-size: .8125rem;
+          color: var(--muted); text-decoration: none; }
+  .apps { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .apps li { margin: 0 0 .75rem; }
+  .apps a { display: block; background: var(--card); border-radius: 10px;
+            padding: 1rem 1.25rem; text-decoration: none; }
+  .apps strong { display: block; font-weight: 500; }
+  .apps span { color: var(--muted); font-size: .875rem; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: .8125rem; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1a1a19; --card: #262625; --ink: #e8e8e6; --muted: #9a9a97; --rule: #3a3a38; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <a class="back" href="./">&larr; All apps / アプリ一覧</a>
+
+  <h1>Sonolens+ — Support</h1>
+  <p class="sub">Field recorder &nbsp;&middot;&nbsp; k.odk</p>
+
+  <div class="lead">
+    <p>Something wrong, or something missing? Write to
+    <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a>. Please include your device
+    model, your iOS version, the microphone or interface you used and what you were doing when it
+    happened &mdash; it makes a fix much more likely.</p>
+  </div>
+
+  <h2>Why does it sound different from Voice Memos?</h2>
+  <p>Sonolens+ switches off everything iOS normally does to a recording: automatic level,
+  noise reduction and the voice low cut. You get what the microphone actually hears. Quiet
+  places stay quiet, so use the preamp to bring the level up.</p>
+
+  <h2>Preamp and level</h2>
+  <p>The built-in microphone has no adjustable gain, so the preamp adds up to +40 dB inside the
+  app. The meters, the waveform and the file all show the level after the preamp. If you raise it
+  a lot, record in 32-bit float: a peak that goes over 0 dB can still be brought back later.</p>
+
+  <h2>Pre-roll and self-timer</h2>
+  <p>With pre-roll on, the take starts a few seconds before you pressed Record, so a bird that
+  sang first is not lost. The self-timer gives you time to walk away from the phone; a take
+  started with the timer has no pre-roll, so your footsteps are not in it.</p>
+
+  <h2>Sample rates</h2>
+  <p>The iPhone's own microphone runs at 48 kHz. Other rates are converted with the highest
+  quality converter, and the Input page says so. A USB microphone or interface can record at its
+  own rate natively.</p>
+
+  <h2>Where are my files?</h2>
+  <p>On the Takes page, and in the Files app under On My iPhone &rarr; Sonolens+. WAV files are
+  Broadcast WAV with the date, time and (with Geotag on) location inside. WAV splits at 4 GB;
+  CAF has no size limit.</p>
+
+  <h2>It stopped recording</h2>
+  <p>Recording continues with the screen locked. It stops on its own only when storage is almost
+  full or when Auto stop is set. If a call interrupts, recording resumes when the call ends.</p>
+
+  <h2>Privacy</h2>
+  <p>Nothing is collected and nothing is sent anywhere. The full policy is
+  <a href="sonolens.html">here</a>.</p>
+
+  <!-- ──────────────────────────── -->
+
+  <div class="ja">
+    <h1>Sonolens+ — サポート</h1>
+    <p class="sub">フィールドレコーダー &nbsp;&middot;&nbsp; k.odk</p>
+
+    <div class="lead">
+      <p>不具合のご報告、ご要望は
+      <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a> までお送りください。
+      端末の機種名、iOS のバージョン、使ったマイクやインターフェース、どの操作で起きたかを
+      書き添えていただけると、直せる可能性がぐっと上がります。</p>
+    </div>
+
+    <h2>ボイスメモと音が違うのはなぜ？</h2>
+    <p>Sonolens+ は、iOS がふだん録音にかけている処理（自動の音量調整、ノイズ除去、声向けの
+    低音カット）をすべて外しています。マイクが実際に聴いている音がそのまま録れます。
+    静かな場所は静かなまま録れるので、プリアンプで音量を上げてください。</p>
+
+    <h2>プリアンプと音量</h2>
+    <p>内蔵マイクは音量を変えられないので、アプリの中で最大 +40 dB まで持ち上げます。
+    メーター、波形、ファイルはすべてプリアンプ後の音量です。大きく上げるときは 32bit float で
+    録ると、0 dB を超えたピークもあとから戻せます。</p>
+
+    <h2>プリロールとセルフタイマー</h2>
+    <p>プリロールを入にすると、録音ボタンを押す数秒前から録音が始まります。先に鳴いた鳥も
+    逃しません。セルフタイマーは、スマホから離れる時間を作るためのものです。タイマーで始めた
+    録音にはプリロールが付かないので、足音は入りません。</p>
+
+    <h2>サンプルレート</h2>
+    <p>iPhone の内蔵マイクは 48 kHz で動いています。それ以外のレートは最高品質の変換で作り、
+    Input のページにもそう表示します。USB マイクやインターフェースは、その機器のレートで
+    そのまま録れます。</p>
+
+    <h2>ファイルはどこ？</h2>
+    <p>Takes のページと、「ファイル」アプリの このiPhone内 → Sonolens+ にあります。WAV は
+    Broadcast WAV で、日時と（Geotag が入なら）場所が書き込まれています。WAV は 4 GB で分割、
+    CAF はサイズの上限がありません。</p>
+
+    <h2>録音が止まった</h2>
+    <p>画面をロックしても録音は続きます。自動で止まるのは、空き容量がほとんどなくなったときと、
+    オートストップを設定したときだけです。電話で中断された場合は、通話が終わると再開します。</p>
+
+    <h2>プライバシー</h2>
+    <p>何も集めず、どこへも送りません。全文は
+    <a href="sonolens.html">こちら</a>。</p>
+  </div>
+
+  <footer>
+    Last updated 11 October 2026 &nbsp;&middot;&nbsp; 最終更新 2026年10月11日
+  </footer>
+
+</main>
+</body>
+</html>
