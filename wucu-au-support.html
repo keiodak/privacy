@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wucu AU — Support</title>
+<style>
+  :root {
+    --bg: #f2f2f0;
+    --card: #dedede;
+    --ink: #1e1e1c;
+    --muted: #5a5a58;
+    --rule: #c4c4c2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, "Helvetica Neue", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 1.5rem; font-weight: 400; letter-spacing: .04em; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); font-size: .875rem; margin: 0 0 3rem; }
+  h2 {
+    font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); margin: 3rem 0 .75rem; padding-bottom: .5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .5rem; }
+  a { color: var(--ink); }
+  .lead {
+    background: var(--card); border-radius: 10px; padding: 1.25rem 1.5rem; margin: 0 0 1rem;
+  }
+  .lead p:last-child { margin-bottom: 0; }
+  .ja { margin-top: 5rem; }
+  .back { display: inline-block; margin-bottom: 2.5rem; font-size: .8125rem;
+          color: var(--muted); text-decoration: none; }
+  .apps { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .apps li { margin: 0 0 .75rem; }
+  .apps a { display: block; background: var(--card); border-radius: 10px;
+            padding: 1rem 1.25rem; text-decoration: none; }
+  .apps strong { display: block; font-weight: 500; }
+  .apps span { color: var(--muted); font-size: .875rem; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: .8125rem; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1a1a19; --card: #262625; --ink: #e8e8e6; --muted: #9a9a97; --rule: #3a3a38; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <a class="back" href="./">&larr; All apps / アプリ一覧</a>
+
+  <h1>Wucu AU — Support</h1>
+  <p class="sub">Seven AUv3 plug-ins &nbsp;&middot;&nbsp; k.odk</p>
+
+  <div class="lead">
+    <p>Something wrong, or something missing? Write to
+    <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a>. Please include your device,
+    your iOS or macOS version, the host app, and what you were doing when it happened.</p>
+    <p><a href="manuals/Wucu_AU_UserGuide.pdf">User guide (PDF)</a></p>
+  </div>
+
+  <h2>The plug-ins do not show up</h2>
+  <p>Open the Wucu app once, then quit and reopen your host. In Logic Pro on the Mac you can also
+  rescan in Settings &rarr; Plug-in Manager. Instruments are under AU Instruments &rarr; kodk, effects under
+  Audio Units &rarr; kodk.</p>
+
+  <h2>Is this the same as the standalone apps?</h2>
+  <p>No. Each plug-in is an extract of the standalone app with the same name &mdash; a part of it, rebuilt for
+  a plug-in slot. The standalone apps are larger instruments and are sold separately.</p>
+
+  <h2>The camera does nothing</h2>
+  <p>Only Sunnandæg uses the camera. On iPhone and iPad, iOS does not let plug-ins use the camera, so use it
+  in the Wucu app. On the Mac it works inside the plug-in; if it was declined, allow it in System Settings
+  &rarr; Privacy &amp; Security &rarr; Camera.</p>
+
+  <h2>It keeps sounding, or suddenly goes loud</h2>
+  <p>Þunresdæg and Frīgedæg have feedback. Pull Feed or Feedback down, then Level.</p>
+
+  <h2>Privacy</h2>
+  <p>Nothing is collected and nothing is sent anywhere. The full policy is
+  <a href="wucu-au.html">here</a>.</p>
+
+  <div class="ja">
+    <h1>Wucu AU — サポート</h1>
+    <p class="sub">七つの AUv3 プラグイン &nbsp;&middot;&nbsp; k.odk</p>
+    <div class="lead">
+      <p>不具合のご報告、ご要望は <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a> までお送りください。
+      端末、iOS / macOS のバージョン、ホストアプリ、どの操作で起きたかを書き添えてください。</p>
+      <p><a href="manuals/Wucu_AU_UserGuide.pdf">ユーザーガイド（PDF・英語）</a></p>
+    </div>
+    <h2>プラグインが出てきません</h2>
+    <p>Wucu アプリを一度開き、ホストを開き直してください。Mac の Logic Pro では、設定 → プラグインマネージャで再スキャンもできます。</p>
+    <h2>単体のアプリと同じものですか</h2>
+    <p>いいえ。各プラグインは、同じ名前の単体アプリの機能の一部を抜き出して、プラグインとして作り直したものです。</p>
+    <h2>カメラが効きません</h2>
+    <p>カメラを使うのは Sunnandæg だけです。iPhone・iPad ではプラグインの中でカメラを使えないため、Wucu アプリの中で使ってください。Mac ではプラグインの中で使えます。</p>
+    <h2>プライバシー</h2>
+    <p>何も集めず、どこへも送りません。全文は <a href="wucu-au.html">こちら</a>。</p>
+  </div>
+
+  <footer>
+    Last updated 23 October 2026 &nbsp;&middot;&nbsp; 最終更新 2026年10月23日
+  </footer>
+
+</main>
+</body>
+</html>
