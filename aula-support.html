@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Aula</title>
+<style>
+  :root {
+    --bg: #f2f2f0;
+    --card: #dedede;
+    --ink: #1e1e1c;
+    --muted: #5a5a58;
+    --rule: #c4c4c2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, "Helvetica Neue", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 1.5rem; font-weight: 400; letter-spacing: .04em; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); font-size: .875rem; margin: 0 0 3rem; }
+  h2 {
+    font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); margin: 3rem 0 .75rem; padding-bottom: .5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .5rem; }
+  a { color: var(--ink); }
+  .lead {
+    background: var(--card); border-radius: 10px; padding: 1.25rem 1.5rem; margin: 0 0 1rem;
+  }
+  .lead p:last-child { margin-bottom: 0; }
+  .ja { margin-top: 5rem; }
+  .back { display: inline-block; margin-bottom: 2.5rem; font-size: .8125rem;
+          color: var(--muted); text-decoration: none; }
+  .apps { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .apps li { margin: 0 0 .75rem; }
+  .apps a { display: block; background: var(--card); border-radius: 10px;
+            padding: 1rem 1.25rem; text-decoration: none; }
+  .apps strong { display: block; font-weight: 500; }
+  .apps span { color: var(--muted); font-size: .875rem; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: .8125rem; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1a1a19; --card: #262625; --ink: #e8e8e6; --muted: #9a9a97; --rule: #3a3a38; }
+  }
+  pre { white-space: pre-wrap; font: 12px/1.6 ui-monospace, Menlo, monospace; background: var(--card);
+        border-radius: 10px; padding: 1rem 1.25rem; margin: 0 0 1rem; }
+</style>
+<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"></head>
+<body><main>
+<a class="back" href="index.html">&larr; All apps / アプリ一覧</a>
+<h1>Aula for AUv3 — Support</h1>
+<p class="sub">An AUv3 host, played on a field &nbsp;&middot;&nbsp; k.odk</p>
+<div class="lead"><p>Something wrong, or something missing? Write to <a href="mailto:kodk.dev@gmail.com">kodk.dev@gmail.com</a>. Please include your device model, your iOS version, the plug-ins you had loaded, and what you were doing when it happened &mdash; it makes a fix much more likely.</p></div>
+<h2>How do I start?</h2>
+<p>Tap a track's empty source and choose an instrument &mdash; an AUv3 on your device, or Aula's own drum machine. Add effects in the places around it. Open PLAY and draw a circle with two fingers over the sources to catch them; double-tap the circle to choose how it plays.</p>
+<h2>A plug-in does not appear</h2>
+<p>Open the plug-in's own app once, then restart Aula. Only AUv3 plug-ins are listed; MIDI-processor apps appear in a PLAY circle's chooser, not in a track.</p>
+<h2>A plug-in crashed or went silent</h2>
+<p>Aula hosts plug-ins made by others, and some may be unstable with it. Remove the plug-in and add it again, or restart Aula. If it keeps happening, please tell us which plug-in it was.</p>
+<h2>Nothing is playing</h2>
+<p>Check the silent switch, the track's VOL and MUTE, and the master level. In PLAY, a circle only plays the sources it has caught.</p>
+<h2>The sound keeps going after I leave the app</h2>
+<p>That is deliberate: Aula keeps playing while you switch apps or lock the screen, the way an instrument should. To stop it, stop playback or close the app.</p>
+<h2>Ableton Link</h2>
+<p>Link is in progress and not available yet.</p>
+<h2>Privacy</h2>
+<p>Nothing is collected and nothing is sent anywhere. The full policy is <a href="aula.html">here</a>.</p>
+</main></body></html>
