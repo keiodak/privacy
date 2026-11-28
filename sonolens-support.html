@@ -79,8 +79,10 @@
 
   <h2>Preamp and level</h2>
   <p>The built-in microphone has no adjustable gain, so the preamp adds up to +40 dB inside the
-  app. The meters, the waveform and the file all show the level after the preamp. If you raise it
-  a lot, record in 32-bit float: a peak that goes over 0 dB can still be brought back later.</p>
+  app. The meters, the waveform and the file all show the level after the preamp. In 16 or 24-bit a
+  safety limiter keeps loud sounds from breaking up. In 32-bit float the limiter is off: a peak over 0 dB
+  is kept in the file and can be brought back later in an editor. Sound that was already too loud at the
+  microphone cannot be rescued either way.</p>
 
   <h2>Pre-roll and self-timer</h2>
   <p>With pre-roll on, the take starts a few seconds before you pressed Record, so a bird that
@@ -130,8 +132,7 @@
 
     <h2>プリアンプと音量</h2>
     <p>内蔵マイクは音量を変えられないので、アプリの中で最大 +40 dB まで持ち上げます。
-    メーター、波形、ファイルはすべてプリアンプ後の音量です。大きく上げるときは 32bit float で
-    録ると、0 dB を超えたピークもあとから戻せます。</p>
+    メーター、波形、ファイルはすべてプリアンプ後の音量です。16 / 24bit ではセーフティリミッターが大きな音の割れを防ぎます。32bit float ではリミッターを切り、0 dB を超えたピークもファイルに残すので、あとで編集ソフトで戻せます。マイクに入った時点で大きすぎた音は、どちらでも戻せません。</p>
 
     <h2>プリロールとセルフタイマー</h2>
     <p>プリロールを入にすると、録音ボタンを押す数秒前から録音が始まります。先に鳴いた鳥も
